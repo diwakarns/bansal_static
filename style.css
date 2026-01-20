@@ -1,0 +1,1002 @@
+/* --- Global Styles --- */
+:root {
+    --primary-green: #3a7d34;
+    --dark-green: #2e6229;
+    --light-green-bg: #e9f5e9;
+    --text-dark: #333;
+    --text-light: #666;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4 {
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+.section {
+    padding: 80px 0;
+    background-color: var(--white);
+    border-bottom: 1px solid #eee;
+}
+
+.bg-light-green {
+    background-color: var(--light-green-bg);
+    border-bottom: none;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-green);
+    margin: 15px auto 0;
+}
+
+.text-center { text-align: center; }
+.text-white { color: var(--white) !important; }
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+}
+
+/* --- Header --- */
+.header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* --- LOGO STYLES UPDATED --- */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center image and text */
+    gap: 15px; /* Space between logo image and text */
+    color: var(--primary-green);
+}
+
+.logo img {
+    height: 55px; /* Adjust this to fit your navbar height */
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.logo-text span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
+/* --------------------------- */
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--primary-green);
+}
+
+/* --- Hero Section --- */
+/* --- Hero Section --- */
+.hero {
+    /* Background Image */
+    background: url('images/pellets3.jpg') no-repeat center center/cover;
+    height: 70vh; 
+    min-height: 500px;
+    
+    /* Flexbox to align content */
+    display: flex;
+    align-items: center;      /* Vertically center the text */
+    justify-content: flex-start; /* Aligns content to the LEFT */
+    
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* Dark overlay to make text readable */
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)); 
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%; /* Ensures container takes full width to allow left alignment */
+}
+
+.hero-content {
+    max-width: 600px; /* Limits width so text doesn't span whole screen */
+    text-align: left; /* Aligns text inside the box to the left */
+    color: var(--white);
+    padding-left: 20px; /* Adds a little spacing from the very edge */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem; /* Big text size */
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Shadow for readability */
+    color: var(--white);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    color: #e9f5e9; /* Slightly off-white/greenish for subtext */
+}
+
+/* Mobile Responsiveness for Hero */
+@media (max-width: 768px) {
+    .hero {
+        justify-content: center; /* Center on mobile if preferred */
+        text-align: center;
+    }
+    .hero-content {
+        text-align: center;
+        padding-left: 0;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
+/* --- About Section --- */
+/* --- About Section Specifics --- */
+.about-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split page 50/50 */
+    gap: 60px; /* Increased gap for better spacing with large text */
+    align-items: center;
+}
+
+/* --- Typography Updates (Increased Sizes) --- */
+
+/* 1. Big Title */
+.about-title {
+    font-size: 3.5rem; /* Matches Facility/Specs sections */
+    font-weight: 800;
+    color: #123315; /* Dark Green Brand Color */
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+/* 2. Lead Text (The first paragraph) */
+.lead-text {
+    font-size: 1.6rem; /* Large lead text */
+    color: #2e7d32;    /* Medium Green */
+    margin-bottom: 25px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* 3. Standard Body Text */
+.body-text {
+    font-size: 1.35rem; /* Matches other sections body text */
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* 4. Highlighted Text (Green Background) */
+.highlight-text {
+    background-color: #2e7d32; /* Green background */
+    color: white;              /* White text */
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/* --- Image Collage Layout --- */
+.about-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for images */
+    grid-template-rows: 250px 200px; /* Increased height for images */
+    gap: 15px;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.collage-item img:hover {
+    transform: scale(1.02);
+}
+
+/* Specific Positions for Images */
+.item-1 {
+    grid-column: 1 / 2; /* Top Left */
+    grid-row: 1 / 2;
+}
+.item-2 {
+    grid-column: 2 / 3; /* Top Right */
+    grid-row: 1 / 2;
+}
+.item-3 {
+    grid-column: 1 / 3; /* Bottom (Spans full width) */
+    grid-row: 2 / 3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .about-wrapper {
+        grid-template-columns: 1fr; /* Stack vertically on mobile */
+        gap: 40px;
+    }
+    
+    .about-title {
+        font-size: 2.5rem; /* Smaller title on mobile */
+        text-align: center;
+    }
+
+    .lead-text, .body-text {
+        text-align: center; /* Center text on mobile */
+    }
+
+    .about-collage {
+        grid-template-rows: 180px 180px; /* Smaller images on mobile */
+    }
+}
+/* --- Benefits Section --- */
+/* --- Benefits Section Layout --- */
+.benefits-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.benefits-col {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.benefit-item h3 {
+    color: #1a3c18;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+/* Center Hexagon Styling */
+.benefits-center {
+    flex: 0 0 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon-container {
+    width: 350px;
+    height: 350px;
+    position: relative; /* Needed for text overlay positioning */
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.2));
+}
+
+.hexagon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #ddd;
+}
+
+/* --- NEW: Text Overlay on Hexagon --- */
+.hexagon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    /* Keeps the overlay inside the hexagon shape */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    /* Semi-transparent dark overlay to make text pop */
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.brand-name {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    border: 3px solid rgba(255,255,255,0.8);
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.4); /* Box behind text */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .benefits-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .benefits-center {
+        order: -1;
+        flex: 0 0 auto;
+    }
+    .text-right, .text-left {
+        text-align: center;
+    }
+    .hexagon-container {
+        width: 280px;
+        height: 280px;
+    }
+    .brand-name {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* --- Facility Section --- */
+/* --- Facility Section Styling --- */
+.facility-section {
+    background-color: #123315; /* Deep Green Background matching image */
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+/* Title Styling */
+.facility-title {
+    text-align: left; /* Aligns title to left */
+    color: #ffffff;   /* White Text */
+    font-size: 3.5rem; /* Large Font */
+    line-height: 1.2;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+/* Remove the green underline from the generic section-title for this specific section */
+.facility-title::after {
+    display: none; 
+}
+
+/* Grid Layout */
+.facility-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two Equal Columns */
+    gap: 60px;
+}
+
+.facility-col {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Space between items vertical */
+}
+
+/* Individual Item Styling */
+.facility-item {
+    display: flex;
+    align-items: center; /* Aligns icon and text vertically */
+    gap: 25px;
+}
+
+/* Icons */
+.f-icon {
+    flex-shrink: 0;
+    width: 70px;
+    font-size: 3.5rem; /* Large Icons */
+    color: #7cba28;    /* Lime Green Icon Color */
+    text-align: center;
+}
+
+/* Text */
+.f-text p {
+    font-size: 1.3rem; /* Increased Font Size */
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Special Styling for Storage Highlight Item */
+.highlight-item {
+    display: flex;
+    align-items: baseline; /* Aligns text baselines */
+    gap: 15px;
+}
+
+.big-green-text {
+    font-size: 3rem; /* Very Large Number */
+    color: #7cba28;  /* Lime Green */
+    font-weight: 700;
+    line-height: 1;
+}
+
+.storage-label {
+    font-size: 1.3rem;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .facility-grid {
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+        gap: 40px;
+    }
+
+    .facility-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .highlight-item {
+        flex-direction: column; /* Stack the big number and text on small screens */
+        align-items: flex-start;
+    }
+}
+
+
+
+
+/* --- Manufacturing Process Styles --- */
+.process-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.process-grid-layout {
+    display: grid;
+    /* Create a responsive grid with roughly 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    row-gap: 50px; /* More space between rows */
+}
+
+.process-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image Styling */
+.process-item img {
+    width: 100%;
+    height: 220px; /* Fixed height for uniformity */
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-bottom: 0; /* No margin because label attaches directly */
+}
+
+/* Label Styling - Green Number + Text */
+.process-label {
+    display: flex;
+    align-items: stretch; /* Makes both sides equal height */
+    background: #ffffff;
+    border-bottom: 2px solid #eee;
+}
+
+/* Green Number Box */
+.step-number {
+    background-color: #009a49; /* Bright Green matching reference */
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px; /* Ensures width for double digits */
+    /* Little triangle effect on the right side if desired, 
+       but standard box matches your image 1 */
+}
+
+/* Description Text */
+.step-text {
+    padding: 10px 15px;
+    font-size: 1.25rem; /* Increased Font Size */
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    align-items: center;
+    line-height: 1.3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .process-grid-layout {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+/* --- Footer Styles --- */
+.site-footer {
+    background-color: #123315; /* Matching Dark Green Theme */
+    color: #ffffff;
+    padding-top: 70px;
+    font-size: 1rem;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr; /* 3 Columns layout */
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Column 1: Brand */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+    background: white; /* White bg for logo visibility */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.footer-desc {
+    color: #cccccc;
+    line-height: 1.6;
+    max-width: 350px;
+}
+
+/* Column Headers */
+.footer-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #7cba28; /* Light Green Accent */
+}
+
+/* Links List */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.footer-links a:hover {
+    color: #7cba28; /* Light Green on Hover */
+    padding-left: 5px; /* Slight movement effect */
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.contact-list i {
+    color: #7cba28; /* Light Green Icon */
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: 25px 0;
+    text-align: center;
+    color: #888888;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr; /* Stack columns */
+        gap: 40px;
+    }
+    
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%); /* Center underline on mobile */
+    }
+    
+    .footer-col {
+        text-align: center;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .footer-desc {
+        margin: 0 auto;
+        text-align: justify !important;
+    }
+    
+    .contact-list li {
+        justify-content: center;
+    }
+}
+/* --- Technical Specification Sections --- */
+
+/* 1. The Container Section */
+.spec-section {
+    padding: 0; /* Remove padding so content touches edges */
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.full-width-wrapper {
+    display: flex;
+    width: 100%;
+    /* 'stretch' ensures the green column and text column are same height */
+    align-items: stretch; 
+    min-height: 600px;
+}
+
+/* 2. The Image Column (Green Background + Arrow Cut) */
+.spec-image-col {
+    flex: 0 0 45%; /* Width of the image side */
+    background-color: #123315; /* Dark Green Background */
+    
+    /* This padding creates the "Frame" effect. 
+       We leave Right padding at 0 because the white arrow cuts in there. */
+    padding: 30px 0 30px 30px; 
+    
+    position: relative;
+    
+    /* The Arrow Cut Shape */
+    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+}
+
+.spec-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the green frame */
+    display: block;
+}
+
+/* 3. The Content Column */
+.spec-content-col {
+    flex: 1; /* Fills remaining space */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center;
+    padding: 50px;
+    /* Add extra left padding so text doesn't hit the arrow tip */
+    padding-left: 20px; 
+}
+
+.bg-light-gray {
+    background-color: #f9f9f9;
+}
+
+/* 4. Retaining Your Typography & Table Classes */
+.spec-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #123315; /* Matched to green bg */
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+.spec-subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    /* Optional: Green underline */
+    border-bottom: 4px solid #7cba28; 
+    display: inline-block;
+}
+
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 1.1rem;
+    border: 2px solid #123315;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.tech-table th, 
+.tech-table td {
+    padding: 12px 15px;
+    border: 1px solid #123315;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tech-table th {
+    background-color: #123315;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.tech-table tbody tr:nth-child(even) {
+    background-color: #f1f8f1;
+}
+
+.tech-table td:nth-child(2) {
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .full-width-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .spec-image-col {
+        width: 100%;
+        height: 350px; /* Fixed height for image area on mobile */
+        padding: 15px; /* Even padding */
+        clip-path: none; /* Remove arrow cut on mobile for better space */
+    }
+    
+    .spec-content-col {
+        padding: 30px 15px;
+    }
+
+    .spec-title {
+        font-size: 2.2rem;
+    }
+    
+    .tech-table {
+        font-size: 0.85rem;
+    }
+    
+    .tech-table th, .tech-table td {
+        padding: 8px 5px;
+    }
+}
+/* --- Biomass Section Styles --- */
+.biomass-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    overflow: hidden; /* Prevents overflow if image is large */
+}
+
+.biomass-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px; /* Space between image and text */
+}
+
+/* Image Styling with Green Shape */
+.biomass-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px; /* Limits image width */
+}
+
+.green-backdrop {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: #1a3c18; /* Dark Green Color matching your image */
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.biomass-image-container img {
+    position: relative;
+    z-index: 2; /* Sits on top of the green box */
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Text Content Styling */
+.biomass-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.biomass-text h2 {
+    font-size: 3.5rem; /* Large Heading Size */
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1a3c18; /* Dark Green Title */
+    margin-bottom: 25px;
+}
+
+.biomass-text p {
+    font-size: 1.5rem; /* Increased Body Text Size */
+    font-weight: 500;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .biomass-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .biomass-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .biomass-text p {
+        font-size: 1.2rem;
+    }
+
+    .green-backdrop {
+        /* Adjust backdrop for mobile center alignment */
+        top: 15px;
+        left: 15px; 
+    }
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .benefits-grid, .process-grid, .specs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    .benefits-grid, .process-grid, .specs-grid, .facility-images, .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .about-features {
+        flex-wrap: wrap;
+    }
+}
