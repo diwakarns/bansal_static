@@ -19,20 +19,24 @@
                 </div>
             </div>
 
-            <nav class="nav">
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav" id="nav-menu">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#facility">Facility</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#specs">Specs</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#benefits" class="nav-link">Benefits</a></li>
+                    <li><a href="#facility" class="nav-link">Facility</a></li>
+                    <li><a href="#process" class="nav-link">Process</a></li>
+                    <li><a href="#specs" class="nav-link">Specs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-  <section class="hero">
+    <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1>BANSAL ECO ENERGY</h1>
@@ -81,6 +85,7 @@
             </div>
         </div>
     </section>
+
     <section class="biomass-section">
         <div class="container">
             <div class="biomass-wrapper">
@@ -100,13 +105,14 @@
             </div>
         </div>
     </section>
-  <section id="benefits" class="section">
+
+    <section id="benefits" class="section">
         <div class="container">
-            <h2 class="section-title" style="font-size: 3rem; margin-bottom: 60px;">Benefits of Biomass Pellets</h2>
+            <h2 class="section-title responsive-title">Benefits of Biomass Pellets</h2>
             
             <div class="benefits-layout">
                 
-                <div class="benefits-col text-right">
+                <div class="benefits-col text-right-desktop">
                     <div class="benefit-item">
                         <h3>RENEWABLE</h3>
                         <p>Sustainable Biomass can be harvested throughout the year.</p>
@@ -124,14 +130,13 @@
                 <div class="benefits-center">
                     <div class="hexagon-container">
                         <img src="images/pellet1.jpg" alt="Biomass Pellets">
-                        
                         <div class="hexagon-overlay">
                             <span class="brand-name">BANSAL<br>ECO ENERGY</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="benefits-col text-left">
+                <div class="benefits-col text-left-desktop">
                     <div class="benefit-item">
                         <h3>ECONOMICAL</h3>
                         <p>Significant low energy costs & attractive calorific value.</p>
@@ -149,7 +154,8 @@
             </div>
         </div>
     </section>
-  <section id="facility" class="facility-section">
+
+    <section id="facility" class="facility-section">
         <div class="container">
             <h2 class="section-title text-left facility-title">
                 State-of-the-Art<br>Manufacturing Facility
@@ -158,79 +164,44 @@
             <div class="facility-grid">
                 
                 <div class="facility-col">
-                    
                     <div class="facility-item">
-                        <div class="f-icon">
-                            <i class="fas fa-industry"></i>
-                        </div>
-                        <div class="f-text">
-                            <p>Samaypur Badli New Delhi the facility sprawled over 49,000 Sq. Ft.</p>
-                        </div>
+                        <div class="f-icon"><i class="fas fa-industry"></i></div>
+                        <div class="f-text"><p>Samaypur Badli New Delhi the facility sprawled over 49,000 Sq. Ft.</p></div>
                     </div>
-
                     <div class="facility-item">
-                        <div class="f-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <div class="f-text">
-                            <p>Fully-automated machinery to handle Biomass for a uniform quality</p>
-                        </div>
+                        <div class="f-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="f-text"><p>Fully-automated machinery to handle Biomass for a uniform quality</p></div>
                     </div>
-
                     <div class="facility-item">
-                        <div class="f-icon">
-                            <i class="fas fa-tree"></i>
-                        </div>
-                        <div class="f-text">
-                            <p><strong>Raw Material</strong> - Saw Dust<br>Hard Wood & Pine Wood</p>
-                        </div>
+                        <div class="f-icon"><i class="fas fa-tree"></i></div>
+                        <div class="f-text"><p><strong>Raw Material</strong> - Saw Dust<br>Hard Wood & Pine Wood</p></div>
                     </div>
-
                 </div>
 
                 <div class="facility-col">
-                    
                     <div class="facility-item">
-                        <div class="f-icon">
-                            <i class="fas fa-solar-panel"></i>
-                        </div>
-                        <div class="f-text">
-                            <p>Powered by Solar Energy 400kW capacity which reduces approx 584 tons of carbon emission per year</p>
-                        </div>
+                        <div class="f-icon"><i class="fas fa-solar-panel"></i></div>
+                        <div class="f-text"><p>Powered by Solar Energy 400kW capacity which reduces approx 584 tons of carbon emission per year</p></div>
                     </div>
-
-
                     <div class="facility-item">
-                        <div class="f-icon">
-                            <i class="fas fa-house"></i>
-                        </div>
-                        <div class="f-text">
-                            <p>38,000 Sq. Ft. Storage Facility<br>of Biomass</p>
-                        </div>
+                        <div class="f-icon"><i class="fas fa-house"></i></div>
+                        <div class="f-text"><p>38,000 Sq. Ft. Storage Facility<br>of Biomass</p></div>
                     </div>
-
-
-
                     <div class="facility-item">
-                        <div class="f-icon">
-                            <i class="fas fa-shopping-bag"></i>
-                        </div>
-                        <div class="f-text">
-                            <p>Packaged in PPE Bags<br>- 25 Kgs, 50 Kgs, 100 Kgs</p>
-                        </div>
+                        <div class="f-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="f-text"><p>Packaged in PPE Bags<br>- 25 Kgs, 50 Kgs, 100 Kgs</p></div>
                     </div>
-
                 </div>
 
             </div>
         </div>
     </section>
+
     <section id="process" class="process-section section">
         <div class="container">
-            <h2 class="section-title text-left" style="font-size: 3.5rem; margin-bottom: 50px;">Manufacturing Process</h2>
+            <h2 class="section-title text-left responsive-title">Manufacturing Process</h2>
             
             <div class="process-grid-layout">
-                
                 <div class="process-item">
                     <img src="images/crusher.jpg" alt="Crusher">
                     <div class="process-label">
@@ -238,7 +209,6 @@
                         <div class="step-text">Crusher & Belt Conveyor</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/loader.jfif" alt="Loader">
                     <div class="process-label">
@@ -246,7 +216,6 @@
                         <div class="step-text">Loader for Raw Material Movement</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/screw.jfif" alt="Screw Conveyor">
                     <div class="process-label">
@@ -254,7 +223,6 @@
                         <div class="step-text">Screw Conveyor</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/belt.jfif" alt="Belt Conveyor">
                     <div class="process-label">
@@ -262,7 +230,6 @@
                         <div class="step-text">Belt Conveyor</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/rottary.jfif" alt="Rotary Screen">
                     <div class="process-label">
@@ -270,7 +237,6 @@
                         <div class="step-text">Rotary Screen</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/dryer.jpg" alt="Dryer">
                     <div class="process-label">
@@ -278,7 +244,6 @@
                         <div class="step-text">Dryer</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/belt2.jfif" alt="Conveyor">
                     <div class="process-label">
@@ -286,7 +251,6 @@
                         <div class="step-text">Belt Conveyor from Dryer to Mixer</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/mixture.jfif" alt="Mixer">
                     <div class="process-label">
@@ -294,7 +258,6 @@
                         <div class="step-text">Mixer</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/belt.jfif" alt="Conveyor">
                     <div class="process-label">
@@ -302,7 +265,6 @@
                         <div class="step-text">Belt Conveyor from Pellet Mill to Cooler</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/screw_feeder.jfif" alt="Pellet Mill">
                     <div class="process-label">
@@ -310,7 +272,6 @@
                         <div class="step-text">Screw Feeder, Conditioner & Pellet Mill</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?w=500&auto=format&fit=crop&q=60" alt="Cooler">
                     <div class="process-label">
@@ -318,7 +279,6 @@
                         <div class="step-text">Cooler</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/packingmachine.jfif" alt="Packaging">
                     <div class="process-label">
@@ -326,7 +286,6 @@
                         <div class="step-text">Packaging Machine</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/compressor.jfif" alt="Compressor">
                     <div class="process-label">
@@ -334,7 +293,6 @@
                         <div class="step-text">Compressor</div>
                     </div>
                 </div>
-
                 <div class="process-item">
                     <img src="images/final.jpg" alt="Final Output">
                     <div class="process-label">
@@ -342,11 +300,11 @@
                         <div class="step-text">Final Output Packed Automatically</div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-  <section id="specs" class="spec-section">
+
+    <section id="specs" class="spec-section">
         <div class="full-width-wrapper">
             
             <div class="spec-image-col">
@@ -369,13 +327,55 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>1.</td><td>Total Moisture</td><td>%</td><td>7.16</td><td>EN ISO 18134(P-2):2015</td></tr>
-                            <tr><td>2.</td><td>Moisture In The Analyzed Sample (§)</td><td>%</td><td>6.83</td><td>EN ISO 18134(P-3):2015</td></tr>
-                            <tr><td>3.</td><td>Ash (§)</td><td>%</td><td>1.19</td><td>EN ISO 18122:2015</td></tr>
-                            <tr><td>4.</td><td>Volatile Matter (§)</td><td>%</td><td>76.16</td><td>EN ISO 18123:2015</td></tr>
-                            <tr><td>5.</td><td>Fixed Carbon (by Difference) (§)</td><td>%</td><td>15.82</td><td>By Calculation</td></tr>
-                            <tr><td>6.</td><td>Gross Calorific Value (§)</td><td>K.Cal/Kg</td><td>4415</td><td>EN ISO 18125:2017</td></tr>
-                            <tr><td>7.</td><td>Sulphur as S (§)</td><td>%</td><td>0.05</td><td>IS:1350:P-3:1969</td></tr>
+                            <tr>
+                                <td data-label="SL. NO.">1.</td>
+                                <td data-label="PARAMETERS">Total Moisture</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">7.16</td>
+                                <td data-label="PROTOCOL">EN ISO 18134(P-2):2015</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">2.</td>
+                                <td data-label="PARAMETERS">Moisture In The Analyzed Sample (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">6.83</td>
+                                <td data-label="PROTOCOL">EN ISO 18134(P-3):2015</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">3.</td>
+                                <td data-label="PARAMETERS">Ash (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">1.19</td>
+                                <td data-label="PROTOCOL">EN ISO 18122:2015</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">4.</td>
+                                <td data-label="PARAMETERS">Volatile Matter (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">76.16</td>
+                                <td data-label="PROTOCOL">EN ISO 18123:2015</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">5.</td>
+                                <td data-label="PARAMETERS">Fixed Carbon (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">15.82</td>
+                                <td data-label="PROTOCOL">By Calculation</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">6.</td>
+                                <td data-label="PARAMETERS">Gross Calorific Value (§)</td>
+                                <td data-label="UNIT">K.Cal/Kg</td>
+                                <td data-label="RESULT OBTAINED">4415</td>
+                                <td data-label="PROTOCOL">EN ISO 18125:2017</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">7.</td>
+                                <td data-label="PARAMETERS">Sulphur as S (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">0.05</td>
+                                <td data-label="PROTOCOL">IS:1350:P-3:1969</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -383,9 +383,6 @@
 
         </div>
     </section>
-<br>
-<br>
-
 
     <section id="specs-mixed" class="spec-section">
         <div class="full-width-wrapper">
@@ -410,13 +407,55 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>1.</td><td>Total Moisture</td><td>%</td><td>6.62</td><td>EN ISO 18134(P-2):2015</td></tr>
-                            <tr><td>2.</td><td>Moisture In The Analyzed Sample (§)</td><td>%</td><td>6.48</td><td>EN ISO 18134(P-3):2015</td></tr>
-                            <tr><td>3.</td><td>Ash (§)</td><td>%</td><td>1.57</td><td>EN ISO 18122:2015</td></tr>
-                            <tr><td>4.</td><td>Volatile Matter (§)</td><td>%</td><td>76.01</td><td>EN ISO 18123:2015</td></tr>
-                            <tr><td>5.</td><td>Fixed Carbon (by Difference) (§)</td><td>%</td><td>15.94</td><td>By Calculation</td></tr>
-                            <tr><td>6.</td><td>Gross Calorific Value (§)</td><td>K.Cal/Kg</td><td>4407</td><td>EN ISO 18125:2017</td></tr>
-                            <tr><td>7.</td><td>Sulphur as S (§)</td><td>%</td><td>0.05</td><td>IS:1350:P-3:1969</td></tr>
+                            <tr>
+                                <td data-label="SL. NO.">1.</td>
+                                <td data-label="PARAMETERS">Total Moisture</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">6.62</td>
+                                <td data-label="PROTOCOL">EN ISO 18134(P-2):2015</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">2.</td>
+                                <td data-label="PARAMETERS">Moisture In The Analyzed Sample (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">6.48</td>
+                                <td data-label="PROTOCOL">EN ISO 18134(P-3):2015</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">3.</td>
+                                <td data-label="PARAMETERS">Ash (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">1.57</td>
+                                <td data-label="PROTOCOL">EN ISO 18122:2015</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">4.</td>
+                                <td data-label="PARAMETERS">Volatile Matter (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">76.01</td>
+                                <td data-label="PROTOCOL">EN ISO 18123:2015</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">5.</td>
+                                <td data-label="PARAMETERS">Fixed Carbon (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">15.94</td>
+                                <td data-label="PROTOCOL">By Calculation</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">6.</td>
+                                <td data-label="PARAMETERS">Gross Calorific Value (§)</td>
+                                <td data-label="UNIT">K.Cal/Kg</td>
+                                <td data-label="RESULT OBTAINED">4407</td>
+                                <td data-label="PROTOCOL">EN ISO 18125:2017</td>
+                            </tr>
+                            <tr>
+                                <td data-label="SL. NO.">7.</td>
+                                <td data-label="PARAMETERS">Sulphur as S (§)</td>
+                                <td data-label="UNIT">%</td>
+                                <td data-label="RESULT OBTAINED">0.05</td>
+                                <td data-label="PROTOCOL">IS:1350:P-3:1969</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -424,13 +463,10 @@
 
         </div>
     </section>
-<br>
-<br>
 
-  <footer class="site-footer">
+    <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
-                
                 <div class="footer-col">
                     <div class="footer-logo">
                         <img src="images/logo.jpeg" alt="Bansal Eco Energy">
@@ -448,7 +484,7 @@
                         <li><a href="#benefits">Benefits</a></li>
                         <li><a href="#facility">Facility</a></li>
                         <li><a href="#process">Process</a></li>
-                        <li><a href="#specs-pine">Specifications</a></li>
+                        <li><a href="#specs">Specifications</a></li>
                     </ul>
                 </div>
 
@@ -473,7 +509,6 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
             
             <div class="footer-bottom">
@@ -482,5 +517,20 @@
         </div>
     </footer>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
