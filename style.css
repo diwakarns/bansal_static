@@ -135,7 +135,7 @@ h1, h2, h3, h4 {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px;
     width: auto;
     object-fit: contain;
 }
@@ -286,6 +286,7 @@ h1, h2, h3, h4 {
     margin-bottom: 25px;
     line-height: 1.4;
     font-weight: 500;
+    text-align: justify !important;
 }
 
 .body-text {
@@ -293,6 +294,7 @@ h1, h2, h3, h4 {
     color: #333;
     margin-bottom: 25px;
     line-height: 1.6;
+    text-align: justify !important;
 }
 
 .highlight-text {
