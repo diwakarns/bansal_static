@@ -135,7 +135,7 @@ h1, h2, h3, h4 {
 }
 
 .logo img {
-    height: 80px;
+    height: 90px;
     width: auto;
     object-fit: contain;
 }
@@ -209,7 +209,7 @@ h1, h2, h3, h4 {
 
 /* --- Hero Section --- */
 .hero {
-    background: url('images/pellets3.jpg') no-repeat center center/cover;
+    background: url('images/bio4.jpg') no-repeat center center/cover;
     height: 70vh; 
     min-height: 500px;
     display: flex;
