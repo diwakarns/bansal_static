@@ -209,7 +209,7 @@ h1, h2, h3, h4 {
 
 /* --- Hero Section --- */
 .hero {
-    background: url('images/bio3.png') no-repeat center center/cover;
+    background: url('images/bio5.jpg') no-repeat center center/cover;
     height: 70vh; 
     min-height: 500px;
     display: flex;
